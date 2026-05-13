@@ -6,20 +6,23 @@
 
 set -euo pipefail
 
+readonly DEFAULT_SCHEME="BreezeClassic"
 readonly LIGHT_SCHEME="Qogir"
 readonly DARK_SCHEME="QogirDark"
 
 current_hour=$(date +"%H")
 
-if (( current_hour >= 8 && current_hour < 22 )); then
-    scheme="$LIGHT_SCHEME"
-    label="hell"
+if ((current_hour >= 8 && current_hour < 22)); then
+  scheme="$LIGHT_SCHEME"
+  label="hell"
 else
-    scheme="$DARK_SCHEME"
-    label="dunkel"
+  scheme="$DARK_SCHEME"
+  label="dunkel"
 fi
 
 echo "Aktuelle Uhrzeit: $(date +"%H:%M") Uhr"
+echo "Wechsel zu Standard-Farbschema."
+plasma-apply-colorscheme "$DEFAULT_SCHEME"
 echo "Farbschema wird gewechselt zu: ${scheme} (${label})"
 
 echo "Wechsel wird in 3 Sekunden ausgeführt …"
