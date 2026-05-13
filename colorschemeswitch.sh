@@ -2,7 +2,7 @@
 
 # colorschemeswitch.sh
 # Passt das KDE Plasma-Farbschema automatisch an die Tageszeit an.
-# Hell (Qogir): 08:00 – 21:59 | Dunkel (QogirDark): 22:00 – 07:59
+# Hell (Qogir): 08:00 – 19:59 | Dunkel (QogirDark): 20:00 – 07:59
 
 set -euo pipefail
 
@@ -12,7 +12,7 @@ readonly DARK_SCHEME="QogirDark"
 
 current_hour=$(date +"%H")
 
-if ((current_hour >= 8 && current_hour < 22)); then
+if ((current_hour >= 8 && current_hour < 20)); then
   scheme="$LIGHT_SCHEME"
   label="hell"
 else

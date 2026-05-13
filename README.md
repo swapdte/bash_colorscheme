@@ -12,8 +12,8 @@ Automatischer Wechsel des KDE-Plasma-Farbschemas basierend auf der aktuellen Tag
 
 | Zeitraum | Farbschema | Modus |
 |---|---|---|
-| 08:00 – 21:59 | Qogir | Hell |
-| 22:00 – 07:59 | QogirDark | Dunkel |
+| 08:00 – 19:59 | Qogir | Hell |
+| 20:00 – 07:59 | QogirDark | Dunkel |
 
 ## Nutzung
 
