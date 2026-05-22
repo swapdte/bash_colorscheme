@@ -10,7 +10,7 @@ readonly DEFAULT_SCHEME="BreezeClassic"
 readonly LIGHT_SCHEME="Qogir"
 readonly DARK_SCHEME="QogirDark"
 
-current_hour=$(date +"%H")
+current_hour=$(date +"%-H")
 
 if ((current_hour >= 8 && current_hour < 20)); then
   scheme="$LIGHT_SCHEME"
