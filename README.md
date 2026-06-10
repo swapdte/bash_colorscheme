@@ -2,18 +2,23 @@
 
 Automatischer Wechsel des KDE-Plasma-Farbschemas basierend auf der aktuellen Tageszeit.
 
+## Autoren
+
+- **Marc Kerkmann** — Autor
+- **OpenCode AI (mimo-v2.5-pro)** — Co-Autor
+
 ## Voraussetzungen
 
 - KDE Plasma Desktop
-- Die Farbschemata **Qogir** (hell) und **QogirDark** (dunkel) müssen installiert sein
-- Siehe [Qogir KDE Theme](https://github.com/vinceliuice/Qogir-kde) zur Installation
+- Die Farbschemata **WhiteSur** (hell) und **WhiteSurDark** (dunkel) müssen installiert sein
+- Siehe [WhiteSur KDE Theme](https://github.com/vinceliuice/WhiteSur-kde) zur Installation
 
 ## Farbschemata
 
 | Zeitraum | Farbschema | Modus |
 |---|---|---|
-| 08:00 – 19:59 | Qogir | Hell |
-| 20:00 – 07:59 | QogirDark | Dunkel |
+| 08:00 – 19:59 | WhiteSur | Hell |
+| 20:00 – 07:59 | WhiteSurDark | Dunkel |
 
 ## Nutzung
 
@@ -22,7 +27,7 @@ chmod +x colorschemeswitch.sh
 ./colorschemeswitch.sh
 ```
 
-Das Skript zeigt die aktuelle Uhrzeit an, teilt das gewählte Farbschema mit, wartet 3 Sekunden und wendet das Schema an.
+Das Skript zeigt die aktuelle Uhrzeit an, teilt das gewählte Farbschema mit, wartet 1 Sekunde und wendet das Schema an.
 
 ## Automatisierung (optional)
 

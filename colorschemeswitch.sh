@@ -2,13 +2,12 @@
 
 # colorschemeswitch.sh
 # Passt das KDE Plasma-Farbschema automatisch an die Tageszeit an.
-# Hell (Qogir): 08:00 – 19:59 | Dunkel (QogirDark): 20:00 – 07:59
+# Hell (WhiteSur): 08:00 – 19:59 | Dunkel (WhiteSurDark): 20:00 – 07:59
 
 set -euo pipefail
 
-readonly DEFAULT_SCHEME="BreezeClassic"
-readonly LIGHT_SCHEME="Qogir"
-readonly DARK_SCHEME="QogirDark"
+readonly LIGHT_SCHEME="WhiteSur"
+readonly DARK_SCHEME="WhiteSurDark"
 
 current_hour=$(date +"%-H")
 
@@ -21,12 +20,10 @@ else
 fi
 
 echo "Aktuelle Uhrzeit: $(date +"%H:%M") Uhr"
-echo "Wechsel zu Standard-Farbschema."
-plasma-apply-colorscheme "$DEFAULT_SCHEME"
 echo "Farbschema wird gewechselt zu: ${scheme} (${label})"
 
-echo "Wechsel wird in 3 Sekunden ausgeführt …"
-sleep 3
+echo "Wechsel wird in 1 Sekunde ausgeführt …"
+sleep 1
 
 plasma-apply-colorscheme "$scheme"
 
